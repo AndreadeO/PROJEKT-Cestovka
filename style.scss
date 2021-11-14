@@ -30,12 +30,17 @@ $open: 'Open Sans', sans-serif;
 .menu {
     display: flex;
     justify-content: space-evenly;
+    padding: 0;
+    margin-bottom: 50px;
+
 }
 
 .menu__item {
     color: $red;
     list-style-type: none;
+    margin: 0;
 }
+
 
 .menu__link {
     color: $red;
@@ -44,15 +49,33 @@ $open: 'Open Sans', sans-serif;
     
 }
 
+.menu__link:hover,
+.menu__link:focus {
+    color: $white;
+    border: 1px solid $red;
+    padding: 20px;
+    background-color: $red;
+
+
+}
+
+
 .logo {
     width: 235px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 30px;
+    position: relative;
+    left: 25%;
+    margin-top: 16px;
+    margin-bottom: 30px;
 }
+
+
 
 .card-photo__image {
     width: 100%;
+
 }
+
 
 .card-photo {
     margin: 0;
@@ -88,6 +111,7 @@ $open: 'Open Sans', sans-serif;
     position: absolute;
     left: 20px;
     bottom: 60px;
+    margin: 0;
 
 }
 
@@ -95,6 +119,7 @@ $open: 'Open Sans', sans-serif;
     position: absolute;
     left: 20px;
     top: 84px;
+    margin: 0;
 
 }
 
@@ -102,25 +127,91 @@ $open: 'Open Sans', sans-serif;
     position: absolute;
     left: 20px;
     bottom: 23px;
+    font-size: 20px;
+    margin: 0;
 }
 .card-photo__text {
     position: absolute;
     left: 20px;
-    bottom: 20px;
+    bottom: 21px;
+    font-family: $open;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+
 }
-.grid {
+
+.card-photo {
+    margin-bottom: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+.card-service {
+    border: 1px solid $background-grey;
+    background-color: $background-grey;
+    display: flex;
+    align-items: center;
+      
+}
+
+.card__title {
+    margin-left: 94px;
+}
+
+.card__text {
+    margin-left: 94px;
+ 
+}
+
+.card {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 40px;
+
+
 }
 
-.card-photo--first {
-    grid-row: 1/2;
+.card-news {
+    border: 1px solid $background-grey;
+    background-color: $background-grey;
+    padding: 20px;
 }
 
-.card-photo--second {
-    grid-row: 2/3;
+.card-news__title {
+    color: $red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 }
 
-.card-photo--third {
-    grid-row: 3/4;
+.card-news__date {
+    margin: 0;
+    color: $grey;
+
+}
+
+.card-news__text {
+    margin: 0;
+
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.footer {
+    color: $white;
+    background-color: $dark-grey;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
 }
