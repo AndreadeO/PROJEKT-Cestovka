@@ -13,181 +13,193 @@
 </head>
 
 <body class="body">   
-    <div class="container">
-        <header class="site-header">
-            <img class="logo" src="Homepage_ mobil - do 768px/logo.svg" alt="logo-cestovka">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__logo">
+                <img src="Homepage_ mobil - do 768px/logo.svg" alt="logo-cestovka">
+            </div>
 
-            <ul class="menu">
-                <li class="menu__item menu__item--one"><a class="menu__link" href="#">Last minute</a></li>
-                <li class="menu__item menu__item--two"><a class="menu__link" href="#">Destinace</a></li>
-                <li class="menu__item menu__item--three"><a class="menu__link" href="#">Časté otázky</a></li>
-            </ul>
-
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="#">Last minute</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Destinace</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Časté otázky</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <section class="grid">
+        <main class="main">
+            <section class="card-offer__grid">
 
-            <div class="card-photo card-photo--first">
-                <div class="card-photo__background">
-                    <img class="card-photo__image" src="Homepage_ mobil - do 768px/palmy.png" alt="picture-palms">
+                <div class="card-offer__item card-offer__item--first">
+                    <div class="card-offer__image">
+                        <img class="card-offer__picture" src="Homepage_ mobil - do 768px/palmy.png" alt="picture-palms">
+                    </div>
+                    <div class="card-offer__body">
+                        <p class="card-offer__price">17 600 Kč</p>
+                        <h1 class="card-offer__title card-offer__title--big card-offer__title--first">Pohoda pod palmami</h1>
+                        <p class="card-offer__text">Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
+                    </div>
                 </div>
-                <div class="card-photo__body">
-                    <p class="card-photo__box">17 600 Kč</p>
-                    <h1 class="card-photo__title card-photo__title--big card-photo__title--first">Pohoda pod palmami</h1>
-                    <p class="card-photo__text">Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
+
+                <div class="card-offer__item card-offer__item--second">
+                    <div class="card-offer__image">
+                        <img class="card-offer__picture" src="Homepage_ mobil - do 768px/jezero2.png" alt="picture-sea">
+                    </div>
+                    <div class="card-offer__body">
+                        <p class="card-offer__price">8 490 Kč</p>
+                        <h1 class="card-offer__title card-offer__title--small">Klid u jezera</h1>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card-photo card-photo--second">
-                <div class="card-photo__background">
-                    <img class="card-photo__image" src="Homepage_ mobil - do 768px/jezero2.png" alt="picture-sea">
+                <div class="card-offer__item card-offer__item--third">
+                    <div class="card-offer__image">
+                        <img class="card-offer__picture" src="Homepage_ mobil - do 768px/nakole.png" alt="picture-bike">
+                    </div>
+                    <div class="card-offer__body">
+                        <p class="card-offer__price">4 990 Kč</p>
+                        <h1 class="card-offer__title card-offer__title--small">Výlet na kole</h1>
+                    </div>
                 </div>
-                <div class="card-photo__body">
-                    <p class="card-photo__box">8 490 Kč</p>
-                    <h1 class="card-photo__title card-photo__title--small">Klid u jezera</h1>
+
+            </section>
+
+            <section class="cards">
+
+                <div class="card-service card-service--first">
+                    <div class="card-service__logo card-service__logo--map">
+                        <img class="card-service__picture" src="Homepage_ mobil - do 768px/map.svg" alt="icon-map">
+                    </div>
+
+                    <div class="card-service__body">
+                        <h3 class="card-service__title">Podpora na místě</h3>
+
+                        <p class="card-service__text">V cílové destinaci jsou k dispozici naši delegáti, kteří vám vždy rádi poradí.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card-photo card-photo--third">
-                <div class="card-photo__background">
-                    <img class="card-photo__image card-photo__image--small" src="Homepage_ mobil - do 768px/nakole.png" alt="picture-bike">
+                <div class="card-service card-service--second">
+                    <div class="card-service__logo card-service__logo--plane">
+                        <img class="card-service__picture" src="Homepage_ mobil - do 768px/plane.svg" alt="icon-plane">
+                    </div>
+                    <div class="card-service__body">
+                        <h3 class="card-service__title">Služby na letišti</h3>
+
+                        <p class="card-service__text">Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti nebudete čekat.</p>
+                    </div>
                 </div>
-                <div class="card-photo__body">
-                    <p class="card-photo__box">4 990 Kč</p>
-                    <h1 class="card-photo__title card-photo__title--small">Výlet na kole</h1>
+
+                <div class="card-service card-service--third">
+                    <div class="card-service__logo">
+                        <img class="card-service__picture" src="Homepage_ mobil - do 768px/globe.svg" alt="icon-globe">
+                    </div>
+
+                    <div class="card-service__body">
+                        <h3 class="card-service__title">Do celého světa</h3>
+
+                        <p class="card-service__text">Nabízíme pravidelné slevy na vybraných destinací na všech kontinentech.</p>
+                    </div>
                 </div>
-            </div>
 
-        </section>
+                <div class="card-service card-service--fourth">
+                    <div class="card-service__logo">
+                        <img class="card-service__picture" src="Homepage_ mobil - do 768px/shield.svg" alt="icon-shield">
+                    </div>
 
-        <section class="card">
+                    <div class="card-service__body">
+                        <h3 class="card-service__title">Vaše bezpečí</h3>
 
-            <div class="card-service">
-                <img class="card__logo" src="Homepage_ mobil - do 768px/map.svg" alt="icon-map">
-
-                <div class="card__body">
-                    <h3 class="card__title">Podpora na místě</h3>
-
-                    <p class="card__text">V cílové destinaci jsou k dispozici naši delegáti, kteří vám vždy rádi poradí.</p>
+                        <p class="card-service__text">Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám peníze.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card-service">
-                <img class="card__logo" src="Homepage_ mobil - do 768px/plane.svg" alt="icon-plane">
 
-                <div class="card__body">
-                    <h3 class="card__title">Služby na letišti</h3>
+            </section>
 
-                    <p class="card__text">Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti nebudete čekat.</p>
+            <h3 class="headline">Last minute zájezdy</h3>
+
+            <section class="card-offer__grid card-offer__grid--bottom">
+                <div class="card-offer__item card-offer__item--first card-offer__item--bottom-first">
+                    <div class="card-offer__image">
+                        <img class="card-offer__picture" src="Homepage_ mobil - do 768px/lodicka.png" alt="picture-boat">
+                    </div>
+                    <div class="card-offer__body">
+                        <p class="card-offer__price">15 900 Kč</p>
+                        <h1 class="card-offer__title card-offer__title--big card-offer__title--second">Romantika u horského jezera</h1>
+                        <p class="card-offer__text">Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card-service">
-                <img class="card__logo" src="Homepage_ mobil - do 768px/globe.svg" alt="icon-globe">
-
-                <div class="card__body">
-                    <h3 class="card__title">Do celého světa</h3>
-
-                    <p class="card__text">Nabízíme pravidelné slevy na vybraných destinací na všech kontinentech.</p>
+                <div class="card-offer__item card-offer__item--second card-offer__item--bottom-second">
+                    <div class="card-offer__image">
+                        <img class="card-offer__picture" src="Homepage_ mobil - do 768px/podkova.png" alt="picture-canyon">
+                    </div>
+                    <div class="card-offer__body">
+                        <p class="card-offer__price">18 500 Kč</p>
+                        <h1 class="card-offer__title card-offer__title--small">Grand Canyon</h1>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card-service">
-                <img class="card__logo" src="Homepage_ mobil - do 768px/shield.svg" alt="icon-shield">
-
-                <div class="card__body">
-                    <h3 class="card__title">Vaše bezpečí</h3>
-
-                    <p class="card__text">Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám peníze.</p>
+                <div class="card-offer__item card-offer__item--third card-offer__item--bottom-third">
+                    <div class="card-offer__image">
+                        <img class="card-offer__picture" src="Homepage_ mobil - do 768px/zatoka.png" alt="picture-bay">
+                    </div>
+                    <div class="card-offer__body">
+                        <p class="card-offer__price">8 900 Kč</p>
+                        <h1 class="card-offer__title card-offer__title--small">Pěšky po Kanárských ostrovech</h1>
+                    </div>
                 </div>
-            </div>
 
+            </section>
 
-        </section>
+            <h3 class="headline">Novinky</h3>
 
-        <h3>Last minute zájezdy</h3>
+            <section class="cards cards--less">
+            
+                <div class="card-news card-news--first">
 
-        <section class="grid">
-            <div class="card-photo">
-                <div class="card-photo__background">
-                    <img class="card-photo__image" src="Homepage_ mobil - do 768px/lodicka.png" alt="picture-boat">
-                </div>
-                <div class="card-photo__body">
-                    <p class="card-photo__box">15 900 Kč</p>
-                    <h1 class="card-photo__title card-photo__title--big card-photo__title--second">Romantika u horského jezera</h1>
-                    <p class="card-photo__text">Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.</p>
-                </div>
-            </div>
+                    <div class="card-news__body">
 
-            <div class="card-photo">
-                <div class="card-photo__background">
-                    <img class="card-photo__image" src="Homepage_ mobil - do 768px/podkova.png" alt="picture-canyon">
-                </div>
-                <div class="card-photo__body">
-                    <p class="card-photo__box">18 500 Kč</p>
-                    <h1 class="card-photo__title card-photo__title--small">Grand Canyon</h1>
-                </div>
-            </div>
+                        <p class="card-news__date">15. 8. 2020</p>
 
-            <div class="card-photo">
-                <div class="card-photo__background">
-                    <img class="card-photo__image" src="Homepage_ mobil - do 768px/zatoka.png" alt="picture-bay">
-                </div>
-                <div class="card-photo__body">
-                    <p class="card-photo__box">8 900 Kč</p>
-                    <h1 class="card-photo__title card-photo__title--small">Pěšky po Kanárských ostrovech</h1>
-                </div>
-            </div>
+                        <h4 class="card-news__title">Magický Zanzibar</h4>
 
-        </section>
-
-        <h3>Novinky</h3>
-
-        <section class="card">
-        
-            <div class="card-news">
-
-                <div class="card__body">
-
-                    <p class="card-news__date">15. 8. 2020</p>
-
-                    <h4 class="card-news__title">Magický Zanzibar</h4>
-
-                    <p class="card-news__text">Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví vůně exotických koření, příznivé klima, teplé moře, exotická flóra i fauna.</p>
+                        <p class="card-news__text">Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví vůně exotických koření, příznivé klima, teplé moře, exotická flóra i fauna.</p>
+                
+                    </div>
             
                 </div>
-        
-            </div>
 
-            <div class="card-news">
+                <div class="card-news card-news--second">
 
-                <div class="card__body">
+                    <div class="card-news__body">
 
-                    <p class="card-news__date">31. 9. 2020</p>
+                        <p class="card-news__date">31. 9. 2020</p>
 
-                    <h4 class="card-news__title">Návrat českých občanů ze zahraničí</h4>
+                        <h4 class="card-news__title">Návrat českých občanů ze zahraničí</h4>
 
-                    <p class="card-news__text">Všichni občané ČR vracející se ze zahraničí zpět se musí řídit podmínkami uvedenými v platném Ochranném opatření Ministerstva zdravotnictví ČR.</p>
+                        <p class="card-news__text">Všichni občané ČR vracející se ze zahraničí zpět se musí řídit podmínkami uvedenými v platném Ochranném opatření Ministerstva zdravotnictví ČR.</p>
+                
+                    </div>
             
                 </div>
-        
-            </div>
 
-            <div class="card-news">
+                <div class="card-news card-news--third">
 
-                <div class="card__body">
+                    <div class="card-news__body">
 
-                    <p class="card-news__date">6. 10. 2020</p>
+                        <p class="card-news__date">6. 10. 2020</p>
 
-                    <h4 class="card-news__title">Na Kubu s PCR testem</h4>
+                        <h4 class="card-news__title">Na Kubu s PCR testem</h4>
 
-                    <p class="card-news__text">Při vstupu do země se buď musíte prokázat negativním PCR testem na Covid-19, který byl proveden max. 72 hodin před příletem do destinace.</p>
+                        <p class="card-news__text">Při vstupu do země se buď musíte prokázat negativním PCR testem na Covid-19, který byl proveden max. 72 hodin před příletem do destinace.</p>
+                
+                    </div>
             
                 </div>
-        
-            </div>
 
-        </section> 
+            </section> 
+        </main>
 
         <footer class="footer">©2021, Czechitas</footer>
 
